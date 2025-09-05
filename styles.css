@@ -85,7 +85,7 @@ body{
 .bullets{margin:0; padding-left:18px}
 .bullets li{margin:6px 0}
 .about-card, .rule-card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid var(--outline); padding:22px; border-radius:16px}
-.badge{display:inline-block; font-size:12px; color:var(--muted); border:1px solid var(--outline); padding:6px 10px; border-radius:999px; margin-bottom:8px}
+.badge{display:inline-block; font-size:14px; color:var(--muted); border:1px solid var(--outline); padding:8px 16px; border-radius:999px; margin-bottom:12px; line-height:1.4; max-width:100%}
 .about-highlights{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
 .chip{font-size:12px; color:var(--text); border:1px solid var(--outline); padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.03)}
 

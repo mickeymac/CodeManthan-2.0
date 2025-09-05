@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>Code Manthan 2.0 • AIMIS & SRKSM</title>
+  <meta name="description" content="Code Manthan 2.0: a 24-hour hackathon organized by AIMIS and Shri Ramkrishna Seva Mandal (SRKSM), backed by SSIP and IIC. Hardware and Software tracks, prizes, and certificates.">
+  <link rel="icon" type="image/svg+xml" href="images/codemanthan.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo" data-hoverable>
+        <!-- Minimal SVG logo -->
+        <img src="images/codemanthan.png " width="28" height="28">
+        <span> CODE मंथन 2.0</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#about" data-hoverable>About</a>
+        <a href="#categories" data-hoverable>Categories</a>
+        <a href="#schedule" data-hoverable>Schedule</a>
+        <a href="#rules" data-hoverable>Rules</a>
+        <a href="#faq" data-hoverable>FAQ</a>
+        <a href="#register" class="btn btn-primary" data-hoverable>Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <p class="badge">ANAND INSTITUTE OF MANAGEMENT AND INFORMATION SCIENCE CODE मंथन 2.0 (Affiliated to Gujarat Technological University) • Backed by SSIP & IIC</p>
+        <h1 class="headline">
+          <span class="headline-top"> CODE मंथन </span>
+          <span class="headline-year">2.0</span>
+        </h1>
+        <p class="typewriter"><span id="typewriter"></span><span class="caret">|</span></p>
+        <div class="key-details reveal">
+          <div class="detail">
+            <span class="label">Date</span>
+            <span class="value" id="event-date">20 & 21 September, 2025</span>
+          </div>
+          <div class="detail">
+            <span class="label">Venue</span>
+            <span class="value" id="event-location">Shri Ramkrishna Seva Mandal, Opp. Town Hall, Anand, 388 001, Gujarat, INDIA</span>
+          </div>
+          <div class="detail">
+            <span class="label">Registration</span>
+            <a class="value link" href="https://docs.google.com/forms/d/e/1FAIpQLSePLerkMRUf2fYBLBbS6bmWjPO20JwDPQPMZyDd_va3SK3N_w/viewform" target="_blank" rel="noopener" data-hoverable>Open • Rs. 400 / student</a>
+          </div>
+        </div>
+        <div class="cta-row reveal">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSePLerkMRUf2fYBLBbS6bmWjPO20JwDPQPMZyDd_va3SK3N_w/viewform" target="_blank" rel="noopener" class="btn btn-primary" data-hoverable>Register Now</a>
+          <a href="https://drive.google.com/file/d/1zDR4oQIt3hNkriPLON9buh7GF4IyCFkh/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-ghost" data-hoverable>Problem Statements</a>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>24</strong><span>Hours</span></div>
+          <div class="stat"><strong>2</strong><span>Tracks</span></div>
+          <div class="stat"><strong>Cash</strong><span>Prizes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="about-card reveal">
+          <h2 class="section-title">About the Hackathon</h2>
+          <p> CODE मंथन 2.0 is a 24-hour hackathon organized by AIMIS (Anand Institute of Management and Information Science) and Shri Ramkrishna Seva Mandal (SRKSM), backed by Student Startup Innovation Policy (SSIP) and Institution's Innovation Council (IIC). Build impactful solutions across Hardware and Software tracks.</p>
+          <ul class="bullets">
+            <li>Team size: 2–6 participants</li>
+            <li>On-site mentoring and mini-workshops</li>
+            <li>Judging based on innovation, impact, and execution</li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <div class="badge">What to expect</div>
+          <h3>Build. Learn. Win.</h3>
+          <p>High-energy venue, resources to prototype fast, and a community that loves to create.</p>
+          <div class="about-highlights">
+            <span class="chip">Swag</span>
+            <span class="chip">Goodies</span>
+            <span class="chip">Mentors</span>
+            <span class="chip">Prizes</span>
+            <span class="chip">Certificate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section">
+      <div class="container">
+        <h2 class="section-title center">Competition Categories</h2>
+        <div class="cards">
+          <article class="card card-hardware reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3h6v4h4v6h-4v4H9v-4H5V7h4V3z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+            </div>
+            <h3>Hardware</h3>
+            <p>Prototype with sensors, microcontrollers, robotics, and IoT. Create tangible solutions that interact with the physical world.</p>
+            <ul class="mini">
+              <li>Electronics, Arduino/RPi, embedded systems</li>
+              <li>3D printing, fabrication support (if available)</li>
+            </ul>
+          </article>
+          <article class="card card-software reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 8l-4 4 4 4M17 8l4 4-4 4" stroke="currentColor" stroke-width="2"/><rect x="10" y="6" width="4" height="12" rx="1" fill="currentColor"/></svg>
+            </div>
+            <h3>Software</h3>
+            <p>Build web, mobile, and AI-powered apps. Focus on usability, scalability, and real impact.</p>
+            <ul class="mini">
+              <li>Web, Mobile, Cloud, AI/ML</li>
+              <li>APIs, integrations, data visualizations</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section">
+      <div class="container">
+        <h2 class="section-title center">Schedule</h2>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-time">09:00</div>
+            <div class="tl-card"><h4>Check-in & Breakfast</h4><p>Pick up badges, meet your squad, and fuel up.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">10:00</div>
+            <div class="tl-card"><h4>Opening Ceremony</h4><p>Event briefing, problem statements, and judging criteria.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">11:00</div>
+            <div class="tl-card"><h4>Hacking Begins</h4><p>Mentors available; mini-workshops throughout the day.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">21:00</div>
+            <div class="tl-card"><h4>Tech Check</h4><p>Demo readiness review and submission reminder.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">09:00 (Day 2)</div>
+            <div class="tl-card"><h4>Final Submissions</h4><p>Lock your builds and get ready to pitch.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">10:00</div>
+            <div class="tl-card"><h4>Demo & Judging</h4><p>Present to judges; evaluation based on innovation, impact, and execution.</p></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">13:00</div>
+            <div class="tl-card"><h4>Awards & Closing</h4><p>Celebrate the winners and wrap-up.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="section">
+      <div class="container">
+        <h2 class="section-title">Rules & Eligibility</h2>
+        <div class="cards">
+          <div class="rule-card reveal">
+            <h3>Team & Eligibility</h3>
+            <ul class="bullets">
+              <li>Teams of 2–6 students from the college</li>
+              <li>Eligibility: Any P.G. / U.G. scholar</li>
+              <li>Registration charge: Rs. 400/- per student</li>
+              <li>Original work during the event window</li>
+              <li>Respect code of conduct and campus policies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-grid">
+          <details class="reveal"><summary>Who can participate?</summary><p>Any P.G. / U.G. scholar.</p></details>
+          <details class="reveal"><summary>Is there a fee?</summary><p>Yes — Rs. 400/- per student.</p></details>
+          <details class="reveal"><summary>How do I register?</summary><p>Fill the Google Form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSePLerkMRUf2fYBLBbS6bmWjPO20JwDPQPMZyDd_va3SK3N_w/viewform" target="_blank" rel="noopener">Registration Link</a></p></details>
+          <details class="reveal"><summary>Where are the problem statements?</summary><p>View them here: <a href="https://drive.google.com/file/d/1zDR4oQIt3hNkriPLON9buh7GF4IyCFkh/view?usp=drivesdk" target="_blank" rel="noopener">Problem Statements</a></p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="register" class="section">
+      <div class="container">
+        <h2 class="section-title">Registration & Payment</h2>
+        <div class="grid-2">
+          <div class="about-card reveal">
+            <h3>Important Information</h3>
+            <ul class="bullets">
+              <li><strong>Last Date of Registration:</strong> 15 September, 2025</li>
+              <li><strong>Event Date:</strong> 20 & 21 September, 2025</li>
+              <li><strong>Rewards:</strong> Total Cash Prizes, Participation Certificate, Mentoring and Guidance</li>
+              <li><strong>Registration Charge:</strong> Rs. 400/- per student</li>
+            </ul>
+            <h4 style="margin-top:14px">Account Details</h4>
+            <ul class="bullets">
+              <li><strong>Account Name:</strong> “CodeManthan”</li>
+              <li><strong>Account Holder:</strong> ANAND PHARMACY COLLEGE</li>
+              <li><strong>Account No:</strong> 356702010017281</li>
+              <li><strong>IFSC Code:</strong> UBIN0535672 (Fifth Character is Zero)</li>
+              <li><strong>Bank:</strong> UNION BANK OF INDIA, <strong>Branch:</strong> ANAND</li>
+            </ul>
+            <h4 style="margin-top:14px">Contact</h4>
+            <ul class="bullets">
+              <li><strong>Email:</strong> <a href="mailto:codemanthanaimis@gmail.com">codemanthanaimis@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+919723077494">9723077494</a></li>
+              <li><strong>Address:</strong> Shri Ramkrishna Seva Mandal, Opp. Town Hall, Anand, 388 001, Gujarat, INDIA</li>
+            </ul>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSePLerkMRUf2fYBLBbS6bmWjPO20JwDPQPMZyDd_va3SK3N_w/viewform" target="_blank" rel="noopener" data-hoverable>Fill Registration Form</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/file/d/1zDR4oQIt3hNkriPLON9buh7GF4IyCFkh/view?usp=drivesdk" target="_blank" rel="noopener" data-hoverable>View Problem Statements</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <p>© 2025 CODE मंथन 2.0 • Built with love for innovation</p>
+      <a href="#top" class="back-to-top" data-hoverable>Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
